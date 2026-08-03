@@ -26,11 +26,11 @@ https://github.com/user-attachments/assets/c20e8a61-a42d-47a7-aef1-8dc049cef3ef
 
 | Shot ID | Scene / Action | Camera Movement | Video Output | Keyframe Poster | Motion Engine |
 |---|---|---|---|---|---|
-| **`beat_1_a`** | **Boy Swallowing Pink Gum** | `push_in` | https://github.com/user-attachments/assets/c20e8a61-a42d-47a7-aef1-8dc049cef3ef | [`beat_1_a.png`](out/test_run/keyframes/beat_1_a.png) | `veo3.1-fast-image-to-video` |
-| **`beat_1_b`** | **Esophagus & Stomach Cutaway** | `tilt_down` | https://github.com/user-attachments/assets/7666be1e-f4c3-4040-bd4c-0fdc317152aa | [`beat_1_b.png`](out/test_run/keyframes/beat_1_b.png) | `veo3.1-fast-image-to-video` |
-| **`beat_2_a`** | **Microscopic Stomach Acid Churn** | `pan_right` | https://github.com/user-attachments/assets/e8a8117e-ccc4-4bab-8b2a-e3f19e7581d9 | [`beat_2_a.png`](out/test_run/keyframes/beat_2_a.png) | `veo3.1-fast-image-to-video` |
-| **`beat_2_b`** | **Intestinal Muscle Contraction** | `static` | https://github.com/user-attachments/assets/e704bec1-3da3-4839-a176-e3a78263119e | [`beat_2_b.png`](out/test_run/keyframes/beat_2_b.png) | `veo3.1-fast-image-to-video` |
-| **`beat_3_a`** | **Boy Smiling in Relief** | `pull_out` | https://github.com/user-attachments/assets/2740f2ac-99ca-4a3d-89be-4efb2e9ca75b | [`beat_3_a.png`](out/test_run/keyframes/beat_3_a.png) | `veo3.1-fast-image-to-video` |
+| **`beat_1_a`** | **Boy Swallowing Pink Gum** | `push_in` | [▶ Play Video](https://github.com/user-attachments/assets/c20e8a61-a42d-47a7-aef1-8dc049cef3ef) | [`beat_1_a.png`](out/test_run/keyframes/beat_1_a.png) | `veo3.1-fast-image-to-video` |
+| **`beat_1_b`** | **Esophagus & Stomach Cutaway** | `tilt_down` | [▶ Play Video](https://github.com/user-attachments/assets/7666be1e-f4c3-4040-bd4c-0fdc317152aa) | [`beat_1_b.png`](out/test_run/keyframes/beat_1_b.png) | `veo3.1-fast-image-to-video` |
+| **`beat_2_a`** | **Microscopic Stomach Acid Churn** | `pan_right` | [▶ Play Video](https://github.com/user-attachments/assets/e8a8117e-ccc4-4bab-8b2a-e3f19e7581d9) | [`beat_2_a.png`](out/test_run/keyframes/beat_2_a.png) | `veo3.1-fast-image-to-video` |
+| **`beat_2_b`** | **Intestinal Muscle Contraction** | `static` | [▶ Play Video](https://github.com/user-attachments/assets/e704bec1-3da3-4839-a176-e3a78263119e) | [`beat_2_b.png`](out/test_run/keyframes/beat_2_b.png) | `veo3.1-fast-image-to-video` |
+| **`beat_3_a`** | **Boy Smiling in Relief** | `pull_out` | [▶ Play Video](https://github.com/user-attachments/assets/2740f2ac-99ca-4a3d-89be-4efb2e9ca75b) | [`beat_3_a.png`](out/test_run/keyframes/beat_3_a.png) | `veo3.1-fast-image-to-video` |
 
 ---
 
