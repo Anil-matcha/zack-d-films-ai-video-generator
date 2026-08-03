@@ -1,0 +1,85 @@
+{
+  "project_name": "mosquito_bite",
+  "topic": "How Mosquitoes Drink Your Blood",
+  "aspect_ratio": "9:16",
+  "style_preset": "zackd_3d_stylized",
+  "narrator_voice": "cloned_user_voice",
+  "character_sheets_required": [
+    "mosquito_turnaround",
+    "skin_cross_section_turnaround"
+  ],
+  "beats": [
+    {
+      "beat_id": "beat_1",
+      "narration": "When a mosquito lands on you, it doesn't just bite — it unfolds six needle-like tools to pierce your skin.",
+      "title_cn": "蚊子叮咬微观",
+      "title_en": "Mosquito Insertion",
+      "hook": true,
+      "shots": [
+        {
+          "shot_id": "beat_1_a",
+          "type": "wide",
+          "duration_sec": 3.0,
+          "scene_description": "Macro 3D rendered mosquito landing on human arm skin, dramatic rim lighting.",
+          "camera_move": "push_in",
+          "character_refs": ["mosquito_turnaround"],
+          "zoom_impact": false
+        },
+        {
+          "shot_id": "beat_1_b",
+          "type": "macro_cross_section",
+          "duration_sec": 3.0,
+          "scene_description": "Cross-section of skin showing six micro-needles probing into a blood vessel.",
+          "camera_move": "tilt_down",
+          "character_refs": ["skin_cross_section_turnaround"],
+          "zoom_impact": true
+        }
+      ]
+    },
+    {
+      "beat_id": "beat_2",
+      "narration": "One needle pumps in saliva containing anesthetics so you feel nothing, while another sucks up your blood.",
+      "title_cn": "麻醉与吸血",
+      "title_en": "Anesthetic & Blood Draw",
+      "hook": false,
+      "shots": [
+        {
+          "shot_id": "beat_2_a",
+          "type": "macro",
+          "duration_sec": 3.0,
+          "scene_description": "Glowing fluid being injected into blood vessel in 3D clay style.",
+          "camera_move": "pan_left",
+          "character_refs": ["skin_cross_section_turnaround"],
+          "zoom_impact": false
+        },
+        {
+          "shot_id": "beat_2_b",
+          "type": "detail",
+          "duration_sec": 3.0,
+          "scene_description": "Mosquito abdomen swelling with red liquid in extreme close-up.",
+          "camera_move": "static",
+          "character_refs": ["mosquito_turnaround"],
+          "zoom_impact": true
+        }
+      ]
+    },
+    {
+      "beat_id": "beat_3",
+      "narration": "Your immune system reacts to the leftover saliva by releasing histamine, creating that itchy red bump!",
+      "title_cn": "免疫反应",
+      "title_en": "Histamine Reaction",
+      "hook": false,
+      "shots": [
+        {
+          "shot_id": "beat_3_a",
+          "type": "wide",
+          "duration_sec": 3.0,
+          "scene_description": "Macro 3D view of red welt swelling on skin tissue with glowing immune cells.",
+          "camera_move": "pull_out",
+          "character_refs": ["skin_cross_section_turnaround"],
+          "zoom_impact": false
+        }
+      ]
+    }
+  ]
+}

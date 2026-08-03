@@ -1,0 +1,27 @@
+{
+  "name": "zackd-director",
+  "version": "1.0.0",
+  "description": "Turn any curiosity-driven topic into a finished Zack D Films-style 3D short video — script, character sheets, 3D keyframes, motion, cloned voiceover, zoom-ins & screen shakes, all automated.",
+  "main": "scripts/assemble.py",
+  "scripts": {
+    "trend": "python scripts/trend_research.py",
+    "script": "python scripts/script_generator.py",
+    "characters": "python scripts/character_sheets.py",
+    "keyframes": "python scripts/keyframes.py",
+    "clips": "python scripts/clips.py",
+    "audio": "python scripts/audio.py",
+    "assemble": "python scripts/assemble.py"
+  },
+  "keywords": [
+    "zackd-films",
+    "ai-director",
+    "3d-animation",
+    "higgsfield",
+    "mcp",
+    "curiosity-loop",
+    "agent-skill",
+    "video-generation"
+  ],
+  "author": "Atlas Cloud & Community",
+  "license": "MIT"
+}

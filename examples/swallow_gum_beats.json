@@ -1,0 +1,85 @@
+{
+  "project_name": "swallow_gum",
+  "topic": "What Happens When You Swallow Gum?",
+  "aspect_ratio": "9:16",
+  "style_preset": "zackd_3d_stylized",
+  "narrator_voice": "cloned_user_voice",
+  "character_sheets_required": [
+    "boy_turnaround",
+    "gut_cross_section_turnaround"
+  ],
+  "beats": [
+    {
+      "beat_id": "beat_1",
+      "narration": "You've probably been told that swallowing gum stays in your stomach for 7 years... but is that actually true?",
+      "title_cn": "吞口香糖的传说",
+      "title_en": "Swallowing Gum Myth",
+      "hook": true,
+      "shots": [
+        {
+          "shot_id": "beat_1_a",
+          "type": "wide",
+          "duration_sec": 3.0,
+          "scene_description": "Stylized 3D boy swallowing a large pink bubble gum, wide shot in bright studio lighting.",
+          "camera_move": "push_in",
+          "character_refs": ["boy_turnaround"],
+          "zoom_impact": false
+        },
+        {
+          "shot_id": "beat_1_b",
+          "type": "macro_cross_section",
+          "duration_sec": 3.0,
+          "scene_description": "Detailed anatomical 3D cutaway cross-section of pink gum sliding down the throat.",
+          "camera_move": "tilt_down",
+          "character_refs": ["gut_cross_section_turnaround"],
+          "zoom_impact": true
+        }
+      ]
+    },
+    {
+      "beat_id": "beat_2",
+      "narration": "Saliva enzymes try to break it down, but the gum base completely resists. So your stomach acid steps in.",
+      "title_cn": "胃酸消解",
+      "title_en": "Stomach Acid Battle",
+      "hook": false,
+      "shots": [
+        {
+          "shot_id": "beat_2_a",
+          "type": "macro",
+          "duration_sec": 3.0,
+          "scene_description": "Microscopic 3D view of stomach acid churning around the pink gum mass.",
+          "camera_move": "pan_right",
+          "character_refs": ["gut_cross_section_turnaround"],
+          "zoom_impact": false
+        },
+        {
+          "shot_id": "beat_2_b",
+          "type": "detail",
+          "duration_sec": 3.0,
+          "scene_description": "Close up of intestinal muscles squeezing the gum intact.",
+          "camera_move": "static",
+          "character_refs": ["gut_cross_section_turnaround"],
+          "zoom_impact": true
+        }
+      ]
+    },
+    {
+      "beat_id": "beat_3",
+      "narration": "Your digestive system treats it like insoluble fiber, passing it safely out of your body in just a few days!",
+      "title_cn": "安全排出",
+      "title_en": "Safe Passage",
+      "hook": false,
+      "shots": [
+        {
+          "shot_id": "beat_3_a",
+          "type": "wide",
+          "duration_sec": 3.0,
+          "scene_description": "Stylized 3D boy smiling happily in relief, bright studio lighting.",
+          "camera_move": "pull_out",
+          "character_refs": ["boy_turnaround"],
+          "zoom_impact": false
+        }
+      ]
+    }
+  ]
+}
