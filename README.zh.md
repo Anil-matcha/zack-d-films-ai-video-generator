@@ -14,21 +14,21 @@
 
 <div align="center">
 
-![Zack D 风格 3D 渲染图](out/test_run/generated_keyframe.jpg)
+https://github.com/user-attachments/assets/c20e8a61-a42d-47a7-aef1-8dc049cef3ef
 
-<b>▶ 3D 关键帧与解剖剖面模型 — “吞下口香糖会发生什么？”</b>
+<b>▶ 3D 动画短片案例 — “吞下口香糖会发生什么？”</b>
 
 </div>
 
-### 🎬 生成的动画片段与本地资源
+### 🎬 生成的动画片段与资源
 
 | 镜头 ID | 场景 / 动作 | 镜头运动 | 生成的视频片段 | 关键帧海报 | 视频生成引擎 |
 |---|---|---|---|---|---|
-| **`beat_1_a`** | **男孩吞下粉色口香糖** | `push_in` (推进) | [`out/test_run/clips/beat_1_a.mp4`](out/test_run/clips/beat_1_a.mp4) | [`out/test_run/keyframes/beat_1_a.png`](out/test_run/keyframes/beat_1_a.png) | `veo3.1-fast-image-to-video` |
-| **`beat_1_b`** | **食道与胃部解剖剖面** | `tilt_down` (俯仰) | [`out/test_run/clips/beat_1_b.mp4`](out/test_run/clips/beat_1_b.mp4) | [`out/test_run/keyframes/beat_1_b.png`](out/test_run/keyframes/beat_1_b.png) | `veo3.1-fast-image-to-video` |
-| **`beat_2_a`** | **微观胃酸消化过程** | `pan_right` (右摇) | [`out/test_run/clips/beat_2_a.mp4`](out/test_run/clips/beat_2_a.mp4) | [`out/test_run/keyframes/beat_2_a.png`](out/test_run/keyframes/beat_2_a.png) | `veo3.1-fast-image-to-video` |
-| **`beat_2_b`** | **肠道肌肉挤压过程** | `static` (特写) | [`out/test_run/clips/beat_2_b.mp4`](out/test_run/clips/beat_2_b.mp4) | [`out/test_run/keyframes/beat_2_b.png`](out/test_run/keyframes/beat_2_b.png) | `veo3.1-fast-image-to-video` |
-| **`beat_3_a`** | **男孩微笑舒心结局** | `pull_out` (拉远) | [`out/test_run/clips/beat_3_a.mp4`](out/test_run/clips/beat_3_a.mp4) | [`out/test_run/keyframes/beat_3_a.png`](out/test_run/keyframes/beat_3_a.png) | `veo3.1-fast-image-to-video` |
+| **`beat_1_a`** | **男孩吞下粉色口香糖** | `push_in` (推进) | https://github.com/user-attachments/assets/c20e8a61-a42d-47a7-aef1-8dc049cef3ef | [`beat_1_a.png`](out/test_run/keyframes/beat_1_a.png) | `veo3.1-fast-image-to-video` |
+| **`beat_1_b`** | **食道与胃部解剖剖面** | `tilt_down` (俯仰) | https://github.com/user-attachments/assets/7666be1e-f4c3-4040-bd4c-0fdc317152aa | [`beat_1_b.png`](out/test_run/keyframes/beat_1_b.png) | `veo3.1-fast-image-to-video` |
+| **`beat_2_a`** | **微观胃酸消化过程** | `pan_right` (右摇) | https://github.com/user-attachments/assets/e8a8117e-ccc4-4bab-8b2a-e3f19e7581d9 | [`beat_2_a.png`](out/test_run/keyframes/beat_2_a.png) | `veo3.1-fast-image-to-video` |
+| **`beat_2_b`** | **肠道肌肉挤压过程** | `static` (特写) | https://github.com/user-attachments/assets/e704bec1-3da3-4839-a176-e3a78263119e | [`beat_2_b.png`](out/test_run/keyframes/beat_2_b.png) | `veo3.1-fast-image-to-video` |
+| **`beat_3_a`** | **男孩微笑舒心结局** | `pull_out` (拉远) | https://github.com/user-attachments/assets/2740f2ac-99ca-4a3d-89be-4efb2e9ca75b | [`beat_3_a.png`](out/test_run/keyframes/beat_3_a.png) | `veo3.1-fast-image-to-video` |
 
 ---
 
