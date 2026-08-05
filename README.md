@@ -28,6 +28,8 @@ It runs through the **MuAPI platform** (`api.muapi.ai`) with local **Python** an
 
 The complete five-shot render is assembled with impact zooms and short fade, wipe, slide, and circle-open transitions:
 
+The included demo is encoded below 10 MB so it can also be uploaded as a GitHub video attachment.
+
 <p align="center">
   <video src="https://raw.githubusercontent.com/Anil-matcha/zack-d-films-ai-video-generator/main/out/test_run/final.mp4" controls muted loop playsinline width="360">
     <a href="out/test_run/final.mp4">▶ Watch or download the full demo video</a>

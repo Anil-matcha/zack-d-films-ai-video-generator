@@ -20,6 +20,8 @@ CANVAS_WIDTH = 720
 CANVAS_HEIGHT = 1280
 FRAME_RATE = 30
 DEFAULT_TRANSITION_DURATION = 0.35
+VIDEO_CRF = 23
+AUDIO_BITRATE = "96k"
 TRANSITIONS = ("fade", "wipeleft", "slideleft", "circleopen")
 
 
@@ -196,13 +198,13 @@ def _build_ffmpeg_command(ffmpeg, clip_info, filter_graph, output_path):
         "-preset",
         "medium",
         "-crf",
-        "20",
+        str(VIDEO_CRF),
         "-pix_fmt",
         "yuv420p",
         "-c:a",
         "aac",
         "-b:a",
-        "160k",
+        AUDIO_BITRATE,
         "-movflags",
         "+faststart",
         output_path,
