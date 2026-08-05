@@ -31,12 +31,12 @@ The complete five-shot render is assembled with impact zooms and short fade, wip
 The included demo is encoded below 10 MB so it can also be uploaded as a GitHub video attachment.
 
 <p align="center">
-  <video src="https://raw.githubusercontent.com/Anil-matcha/zack-d-films-ai-video-generator/main/out/test_run/final.mp4" controls muted loop playsinline width="360">
-    <a href="out/test_run/final.mp4">▶ Watch or download the full demo video</a>
+  <video src="https://github.com/user-attachments/assets/1e9933e3-4baa-4b5f-ab85-4ed3ac8a9849" controls muted loop playsinline width="360">
+    <a href="https://github.com/user-attachments/assets/1e9933e3-4baa-4b5f-ab85-4ed3ac8a9849">▶ Watch or download the full demo video</a>
   </video>
 </p>
 
-<p align="center"><a href="out/test_run/final.mp4">▶ Open the full demo video</a></p>
+<p align="center"><a href="https://github.com/user-attachments/assets/1e9933e3-4baa-4b5f-ab85-4ed3ac8a9849">▶ Open the full demo video</a></p>
 
 ## 🎥 Showcase — all beat videos
 
