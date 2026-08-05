@@ -16,7 +16,7 @@ To clone your voice for Zack D Director shorts:
 
 ## 2. Voice Synthesis Parameters
 
-When running `scripts/audio.py`, the script sends the prompt and voice sample to Higgsfield / TTS engine:
+When running `scripts/audio.py`, the script sends the prompt and voice sample to the configured TTS engine:
 
 ```bash
 python scripts/audio.py out/<project> --voice-sample voice_recording.mp3

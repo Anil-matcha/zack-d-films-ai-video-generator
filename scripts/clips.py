@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Motion Clip Generator for Zack D Director.
-Animates 3D keyframe images into motion video clips via Higgsfield I2V.
+Animates 3D keyframe images into motion video clips via the configured image-to-video provider.
 """
 
 import os

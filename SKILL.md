@@ -2,10 +2,10 @@
 name: zackd-director
 description: >
   Turn ONE curiosity-driven topic or question into a finished Zack D Films-style 3D animated short video, end to end
-  on Higgsfield MCP / API + local ffmpeg — curiosity-loop script, character consistency sheets, 3D keyframe rendering,
-  motion clips, cloned voiceover, zoom-ins, screen shakes, and captions, all automated. Use this whenever the user wants a
+  on the MuAPI platform + local ffmpeg — curiosity-loop script, character consistency sheets, 3D keyframe rendering,
+  motion clips, cloned voiceover, zoom-ins, transitions, and captions, all automated. Use this whenever the user wants a
   "Zack D Films style short", a 3D medical / anatomical / educational explainer short, a curiosity-driven short video,
-  or wants to automate 3D animated short production with Higgsfield.
+  or wants to automate 3D animated short production with an API-backed media pipeline.
   Triggers: "zack d films short", "zack d style", "3d animation short", "curiosity loop video", "make a zack d video",
   "turn this topic into a zack d short".
 ---
@@ -25,7 +25,7 @@ The Zack D Films visual style and viral retention formula rely on 4 critical pil
 1. **Curiosity-Loop Script Structure**: Every sentence opens an open loop (a question your brain physically needs answered), driving scroll-stopping retention.
 2. **Character & Object Consistency Sheets**: Recurring characters, anatomical parts, or items are rendered on standard 3D turnaround sheets first. Every scene uses these sheets as visual anchors to guarantee exact visual identity across angles and wear.
 3. **Signature 3D Render Style**: Stylized 3D digital art, smooth clay/plasticine subsurface scattering, crisp ambient occlusion, cross-section views, vibrant lighting, and cinematic depth of field.
-4. **Fluid Editing Conventions**: Fast cuts (every 2–4 seconds), camera zoom-ins on key impact beats, and screen shakes on scene transitions.
+4. **Fluid Editing Conventions**: Fast cuts (every 2–4 seconds), camera zoom-ins on key impact beats, and short transitions between scenes.
 
 ---
 
@@ -52,9 +52,9 @@ topic / trend
   ├─ 2. script breakdown         Generate beats.json with scene details & asset requirements ◀── GATE 1: User approves script
   ├─ 3. character sheets         Generate orthographic turnaround reference sheets
   ├─ 4. 3D keyframes             Render keyframe images anchored to character sheets
-  ├─ 5. motion clips             Animate keyframes via Higgsfield image-to-video
+  ├─ 5. motion clips             Animate keyframes via the configured image-to-video model
   ├─ 6. voice narration          Synthesize full script in user's cloned voice
-  ├─ 7. assembly                 FFmpeg: concat clips, zoom-ins, screen shakes, captions, BGM
+  ├─ 7. assembly                 FFmpeg: transitions, impact zooms, captions, BGM
   └─ final.mp4
 ```
 
@@ -91,7 +91,7 @@ python scripts/keyframes.py out/<project>
 *Ensures 3D stylized lighting, subsurface scattering, and exact character identity.*
 
 ### Step 5: Motion Clip Generation
-Animate keyframes with Higgsfield Image-to-Video:
+Animate keyframes with the configured image-to-video model:
 ```bash
 python scripts/clips.py out/<project>
 ```
@@ -110,7 +110,7 @@ Assemble the video with signature Zack D editing effects:
 python scripts/assemble.py out/<project>
 ```
 - Adds **zoom-ins** on key beats.
-- Applies **screen shakes** between scene transitions.
+- Applies short **fade, wipe, slide, and circle-open transitions** between scenes.
 - Duck background music under narration and burn styled captions.
 - Outputs `out/<project>/final.mp4`.
 

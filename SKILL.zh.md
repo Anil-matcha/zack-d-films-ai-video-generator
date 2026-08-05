@@ -9,7 +9,7 @@ description: >
 
 将单句主题或好奇心问题转化为完整的 **Zack D Films 风格 3D 短视频**：节奏紧凑、具有极强留存的好奇心钩子，结合 3D 角色三视图一致性系统、3D 渲染质感、克隆人声旁白、关键拍放大 (Zoom-in) 和场景过渡震动 (Screen Shake)。
 
-由 **Higgsfield MCP / API** + 本地 **ffmpeg** 驱动。
+由 **MuAPI 平台与 Google Veo 3.1** + 本地 **ffmpeg** 驱动。
 
 ---
 

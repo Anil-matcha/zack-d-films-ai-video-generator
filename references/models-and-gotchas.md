@@ -1,42 +1,58 @@
-# ⚡ Higgsfield API / MCP Integration & FFmpeg FX Recipes
+# ⚡ MuAPI Integration & FFmpeg FX Recipes
 
 This document covers technical implementation details, model endpoints, FFmpeg filter recipes, and troubleshooting gotchas for **Zack D Director**.
 
 ---
 
-## 1. Higgsfield MCP & API Integration
+## 1. MuAPI Integration
 
-All generation stages communicate with Higgsfield via the MCP Connector or HTTP API:
+All generation stages communicate with MuAPI through its HTTP API:
 
-- **Text-to-Image / Reference Image Gen**: `higgsfield/3d-stylized-v1` (or Nano Banana 3D preset).
-- **Image-to-Video Animation**: `higgsfield/i2v-camera-v2` (supports push-in, tilt, pan, and orbital moves).
-- **Voice Cloning / TTS**: `higgsfield/voice-clone-v1`.
-- **Music Generation**: `higgsfield/bgm-synth-v1`.
+- **Text-to-Image / Reference Image Gen**: MuAPI image generation (`nano-banana-2` with `flux-dev` fallback).
+- **Image-to-Video Animation**: MuAPI Veo 3.1 motion generation (`veo3.1-fast-image-to-video` with fallback).
+- **Voice Cloning / TTS**: MuAPI speech generation (`minimax-speech-2.6-turbo`).
+- **Music Generation**: Local or provider-generated BGM mixed during assembly.
 
 ### API Key Setup:
 ```bash
-export HIGGSFIELD_API_KEY="sk_higgsfield_..."
+export MUAPI_API_KEY="sk-..."
 ```
 
 ---
 
-## 2. FFmpeg Editing Effects Recipes
+## 2. FFmpeg Editing Effects
 
-Zack D Director post-processing (`scripts/assemble.py`) uses two custom FFmpeg filters for visual pop:
+Zack D Director post-processing (`scripts/assemble.py`) uses short crossfades
+between shots and a subtle center crop on marked impact shots. The default
+transition sequence is `fade → wipeleft → slideleft → circleopen`, then it
+repeats for longer projects. Use `--transition-duration 0` for hard cuts.
 
-### A. Dynamic Zoom-In on Key Impact Beats (`zoompan`)
-To zoom into the subject during high-impact narration moments:
+### A. Basic Shot Transitions
+
+The assembler uses FFmpeg's `xfade` filter for video and `acrossfade` for audio:
+
 ```bash
-ffmpeg -i input.mp4 -vf "zoompan=z='min(zoom+0.003,1.25)':d=90:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920" -c:v libx264 output_zoom.mp4
+python3 scripts/assemble.py out/test_run --transition-duration 0.35
 ```
 
-### B. Screen Shake on Scene Transitions (`crop + noise`)
+The transition length is intentionally short so narration and beat timing stay
+clear. Clips without an audio stream receive a silent fallback track.
+
+### B. Dynamic Zoom-In on Key Impact Beats
+
+To zoom into the subject during high-impact narration moments:
+```bash
+ffmpeg -i input.mp4 -vf "scale=756:1344,crop=720:1280:(iw-720)/2:(ih-1280)/2" -c:v libx264 output_zoom.mp4
+```
+
+### C. Optional Screen Shake Recipe
+
 To simulate dramatic screen vibration during cutaways or impacts:
 ```bash
 ffmpeg -i input.mp4 -vf "crop=in_w-20:in_h-20:10+10*sin(n*1.5):10+10*cos(n*1.5),scale=1080:1920" -c:v libx264 output_shake.mp4
 ```
 
-### C. Automatic Music Ducking under Narration
+### D. Automatic Music Ducking under Narration
 ```bash
 ffmpeg -i narration.wav -i bgm.mp3 -filter_complex "[1:a]volume=0.15[bgm];[0:a][bgm]amix=inputs=2:duration=first[aout]" -map 0:v? -map "[aout]" final_mix.mp4
 ```
@@ -46,8 +62,8 @@ ffmpeg -i narration.wav -i bgm.mp3 -filter_complex "[1:a]volume=0.15[bgm];[0:a][
 ## 3. Quick Troubleshooting & Gotchas
 
 1. **Claude / Agent can't generate images or audio**:
-   - *Cause*: MCP Connector is inactive or `HIGGSFIELD_API_KEY` is not exported.
-   - *Fix*: Re-add custom connector in Claude settings or run `export HIGGSFIELD_API_KEY="sk_..."`.
+   - *Cause*: `MUAPI_API_KEY` is not exported or the MuAPI endpoint is unavailable.
+   - *Fix*: Confirm the key is present with `export MUAPI_API_KEY="sk_..."` and retry the request.
 
 2. **Character appearance drifts across shots**:
    - *Cause*: Keyframe generator failed to load character reference sheet.

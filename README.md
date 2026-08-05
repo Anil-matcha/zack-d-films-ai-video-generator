@@ -24,7 +24,19 @@ It runs through the **MuAPI platform** (`api.muapi.ai`) with local **Python** an
 
 > **Ask your agent:** “Make me a Zack D Films-style short explaining what happens when you swallow gum.”
 
-## 🎥 Showcase
+## 🎬 Full demo
+
+The complete five-shot render is assembled with impact zooms and short fade, wipe, slide, and circle-open transitions:
+
+<p align="center">
+  <video src="https://raw.githubusercontent.com/Anil-matcha/zack-d-films-ai-video-generator/main/out/test_run/final.mp4" controls muted loop playsinline width="360">
+    <a href="out/test_run/final.mp4">▶ Watch or download the full demo video</a>
+  </video>
+</p>
+
+<p align="center"><a href="out/test_run/final.mp4">▶ Open the full demo video</a></p>
+
+## 🎥 Showcase — all beat videos
 
 An end-to-end example: **“What Happens When You Swallow Gum?”**
 
@@ -68,6 +80,8 @@ https://github.com/user-attachments/assets/2740f2ac-99ca-4a3d-89be-4efb2e9ca75b
 | `beat_2_b` | Intestinal muscle contraction | `static` | [PNG](out/test_run/keyframes/beat_2_b.png) | `veo3.1-fast-image-to-video` |
 | `beat_3_a` | Character smiling in relief | `pull_out` | [PNG](out/test_run/keyframes/beat_3_a.png) | `veo3.1-fast-image-to-video` |
 
+The five source clips used by the full demo are also included in [`out/test_run/clips/`](out/test_run/clips/), so each beat can be downloaded independently.
+
 ## ✨ Why it works
 
 The pipeline turns a fragmented production process into one agent-guided workflow:
@@ -75,7 +89,7 @@ The pipeline turns a fragmented production process into one agent-guided workflo
 - **Curiosity-first scripts** — hooks, open loops, fast pacing, and a clear payoff.
 - **Consistent 3D worlds** — character turnarounds and anatomy references anchor every shot.
 - **Signature visual language** — plasticine-like materials, subsurface scattering, dramatic studio light, macro depth of field, and internal cross-sections.
-- **High-retention editing** — push-ins on impact beats, screen-shake transitions, voice-led pacing, music, and captions.
+- **High-retention editing** — push-ins on impact beats, short fade/wipe/slide transitions, voice-led pacing, music, and captions.
 - **Human approval at the right moments** — review the beat map and visual direction before the expensive generation stages.
 - **Agent-native by design** — the workflow, prompts, and conventions live in `SKILL.md` and `references/`.
 
@@ -98,7 +112,7 @@ topic / question
   ├─ 4. Keyframes             Render stylized 3D scene posters  ◀── GATE 2: choose look
   ├─ 5. Motion clips           Animate each keyframe with Veo 3.1
   ├─ 6. Voice narration        Synthesize the narration and BGM
-  ├─ 7. Assembly               Add zooms, shakes, mix audio, captions
+  ├─ 7. Assembly               Add impact zooms, transitions, mix audio, captions
   └─ final.mp4                Vertical 9:16 short
 ```
 
@@ -183,7 +197,7 @@ scripts/              Pipeline automation
   audio.py            Narration and BGM
   assemble.py         FFmpeg assembly and effects
 examples/             Ready-to-run beat maps
-out/test_run/         Included keyframe showcase assets
+out/test_run/          Included clips, final demo, and keyframe showcase assets
 ```
 
 ## 🧠 Agent skill details
