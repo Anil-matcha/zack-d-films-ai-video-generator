@@ -1,0 +1,95 @@
+{
+  "project_name": "test_run",
+  "topic": "What Happens When You Swallow Gum?",
+  "aspect_ratio": "9:16",
+  "style_preset": "zackd_3d_stylized",
+  "narrator_voice": "cloned_user_voice",
+  "character_sheets_required": [
+    "main_character_turnaround",
+    "anatomical_organ_cross_section"
+  ],
+  "beats": [
+    {
+      "beat_id": "beat_1",
+      "narration": "What Happens When You Swallow Gum? Here is what actually happens inside your body.",
+      "title_cn": "开场钩子",
+      "title_en": "Curiosity Hook",
+      "hook": true,
+      "shots": [
+        {
+          "shot_id": "beat_1_a",
+          "type": "wide",
+          "duration_sec": 3.0,
+          "scene_description": "Stylized 3D main character experiencing What Happens When You Swallow Gum?, wide shot in bright studio lighting.",
+          "camera_move": "push_in",
+          "character_refs": [
+            "main_character_turnaround"
+          ],
+          "zoom_impact": false
+        },
+        {
+          "shot_id": "beat_1_b",
+          "type": "macro_cross_section",
+          "duration_sec": 3.0,
+          "scene_description": "Detailed anatomical 3D cutaway cross-section illustrating What Happens When You Swallow Gum? mechanism.",
+          "camera_move": "tilt_down",
+          "character_refs": [
+            "anatomical_organ_cross_section"
+          ],
+          "zoom_impact": true
+        }
+      ]
+    },
+    {
+      "beat_id": "beat_2",
+      "narration": "Your bodily defenses immediately kick in, attempting to neutralize the situation.",
+      "title_cn": "身体机制",
+      "title_en": "Biological Reaction",
+      "hook": false,
+      "shots": [
+        {
+          "shot_id": "beat_2_a",
+          "type": "macro",
+          "duration_sec": 3.0,
+          "scene_description": "Microscopic view of fluids and enzymes interacting with the object in 3D clay style.",
+          "camera_move": "pan_right",
+          "character_refs": [
+            "anatomical_organ_cross_section"
+          ],
+          "zoom_impact": false
+        },
+        {
+          "shot_id": "beat_2_b",
+          "type": "detail",
+          "duration_sec": 3.0,
+          "scene_description": "Close up of muscular contractions pushing the subject through the digestive tract.",
+          "camera_move": "static",
+          "character_refs": [
+            "anatomical_organ_cross_section"
+          ],
+          "zoom_impact": true
+        }
+      ]
+    },
+    {
+      "beat_id": "beat_3",
+      "narration": "In the end, your body safely processes it and flushes it out within just a couple of days!",
+      "title_cn": "结局破局",
+      "title_en": "The Resolution",
+      "hook": false,
+      "shots": [
+        {
+          "shot_id": "beat_3_a",
+          "type": "wide",
+          "duration_sec": 3.0,
+          "scene_description": "Stylized 3D main character smiling in relief, bright vibrant lighting, success emote.",
+          "camera_move": "pull_out",
+          "character_refs": [
+            "main_character_turnaround"
+          ],
+          "zoom_impact": false
+        }
+      ]
+    }
+  ]
+}
