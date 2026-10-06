@@ -14,3 +14,7 @@ javascript
 curl
 muapi
 image-models
+nano-banana-api
+gemini-image
+image-generation-api
+image-editing-api
